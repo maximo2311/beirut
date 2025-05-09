@@ -1,16 +1,14 @@
 
 import './App.css';
-import Search from './componentes/SearchModule.js'
-import Header from './componentes/HeaderModule.js'
+import Header from './component/Header'
+import Body from './component/Body'
 
 function App() {
   return (
-    
-    <div className='Cul'>
-    <Header />
-    <Search />
-    </div>
-    
+    <>
+      <Header/>
+      <Body className = 'body' />
+    </>
   );
 }
 
