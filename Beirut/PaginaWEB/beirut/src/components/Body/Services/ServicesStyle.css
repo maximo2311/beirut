@@ -1,0 +1,155 @@
+/*EMPEZANDO DESDE 350*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tituloServices {
+    color: #FFC366;
+    text-align: center;
+    font-weight: normal;
+}
+h2{
+    margin: 0;
+    font-size: 2.2rem;
+}
+.ContainerdeBotones {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.BotonServices {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #9961C5;
+    border-radius: 1rem;
+    padding: 5%;
+    /*width: 29%;*/
+    margin: 5%;
+    border: black 0.1rem solid;
+    text-align: center;
+    transition: all 1s ease-in 0.3s;
+}
+.ContenedordeImg {
+    width: 90%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.ContenedordeTexto {
+    margin-top: 1rem;
+}
+
+.BotonServices div p {
+    transition: font-size 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/*DISEÑO DE BOTONES*/
+
+.textoNOmuestra {
+    width: 29%;
+}
+
+.textoNOmuestra div p {
+    display: block;
+    font-size: 0rem;
+    opacity: 0;
+    color: white;
+}
+
+.textomuestra {
+    width: 80%;
+    margin: 0 30%;
+}
+
+.textomuestra div p {
+    color: white;
+    opacity: 1;
+}
+
+/*ADAPTACIONES PARA EL RESPOSIVE*/
+
+@media only screen and (min-width: 390px) {
+    .ContainerdeBotones{
+        width: 80%;
+    }
+    .textomuestra {
+        width: 70%;
+    }
+    .ContenedordeTexto h3 {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width: 580px) {
+    .ContenedordeTexto h3 {
+        font-size: 1.5rem;
+    }
+    .textomuestra{
+        width: 40%;
+    }
+    .textoNOmuestra{
+        width: 24%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .textoNOmuestra:hover {
+        opacity: 0.5;
+        transform: translateY(0.25rem);
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .ContainerdeBotones {
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .ContainerdeBotones {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .textoNOmuestra{
+        width: 20%;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .ContainerdeBotones {
+        width: 46%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .textoNOmuestra{
+        width: 15%;
+    }
+    .textomuestra div p {
+        font-size: 1.2rem;
+    }
+    .tituloServices{
+        margin: 2rem;
+    }
+}
+/*
+
+800
+.ContainerdeBotones = width: 70%;
+
+900
+.ContainerdeBotones = width: 60%;
+
+
+1100
+.textoNOmuestra =   width: 20%;
+
+1300
+.ContainerdeBotones = width: 46%;
+
+*/

@@ -1,0 +1,74 @@
+.BloquedeTexto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.containerSectionText {
+    flex-direction: column;
+}
+.tituloAboutSection{
+    margin: 1rem;
+    color: #FFC366;
+    font-size: 1.7rem;
+}
+.textoAboutSection {
+    background-color: rgba(250, 250, 250, 0.4);
+    border-radius: 0.7rem;
+    width: 70%;
+    padding: 5%;
+}
+.containerSectionText {
+    flex-direction: column;
+}
+div .VisionBlack {
+    color: black;
+}
+/* ADAPTACIONES PARA RESPONSIVE*/
+
+@media only screen and (min-width: 580px) {
+    .BloquedeTexto {
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between
+
+    }
+    .textoAboutSection {
+        width: 50%
+    }
+    div .MisionReverse {
+    flex-direction: row-reverse;
+    }
+    .tituloAboutSection {
+    width: 50%;
+    text-align: center;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .textoAboutSection  {
+        width: 40%;
+    }
+    .tituloAboutSection {
+    font-size: 3rem;
+    font-weight: 300;
+    }
+    .BloquedeTexto {
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (min-width: 1300px){
+    .BloquedeTexto {
+        width: 70%;
+    }
+    .textoAboutSection {
+        padding: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    
+    .BloquedeTexto {
+        width: 60%;
+    }
+}
+

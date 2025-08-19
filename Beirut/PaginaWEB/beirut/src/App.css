@@ -1,0 +1,23 @@
+body {
+    font-family: "Roboto";
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, black 13%, #9961C5 40%, #FFC366 80%); /*Luego cambiar*/
+    margin: 0%;
+}
+/*fonts: "Roboto" "Algeria"*/
+
+@font-face {
+    font-family: Algeria;
+    src: url(../public/imagenes/ALGERIA.TTF);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out
+}

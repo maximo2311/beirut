@@ -1,0 +1,209 @@
+
+/*SE APLICARA´DE 350 PARA ARRIBA*/
+
+main {
+    flex-direction: column;
+    margin-top: 5%;
+}
+.hero {
+    flex-direction: column;
+    width: 80%;
+    background-color: rgba(127, 71, 221, 0.22);
+    border-radius: 0.8rem;
+}
+.imgPresentacion {
+    width: 80%;
+    border-radius: 1rem;
+    margin: 3rem;
+    overflow: hidden;
+}
+.pContainerHero {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    text-align: center;
+    width: 90%;
+}
+.pContainerHero p {
+    display: block;
+}
+.beirutLink {
+    color: white;
+    font-size: 1.2rem;
+    display: inline;
+    font-family: Algeria;
+    position: static;
+}
+
+p {
+    font-size: 0.85rem;
+}
+
+.serviciosP {
+    margin: 4rem 0;
+    width: 95%;
+}
+.servicioLink {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color:#FFC366;
+    display: inline;
+    position: static;
+}
+
+.EncuentraBeirut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 3rem;
+}
+.pEncuentraBeirut {
+    align-self: flex-start;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.pEncuentraBeirut .beirutLink {
+    font-size: 2.4rem;
+}
+
+.containerImgPBerut {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    margin: 3rem 0;
+    padding: 5%;
+}
+.containerImgEnc {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.PcontainerEnc {
+    display: block;
+    text-align: center;
+    line-height: 1.2rem;
+    width: 80%;
+    margin: 0 0.5rem;
+    font-size: 0.65rem;
+}
+.PcontainerEnc .beirutLink {
+    color: black;
+}
+/*ADAPTACIONES PARA PANTALLAS MAS GRANDE*/
+@media only screen and (min-width: 390px) {
+    .EncuentraBeirut{
+        width: 70%;
+    }
+    .hero {
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 456px) {
+    .PcontainerEnc {
+        font-size: 0.9rem;
+    }
+    .servicioLink {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (min-width: 560px){
+    .EncuentraBeirut {
+        width: 60%;
+    }
+    .hero {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 630px) {
+    p{
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 701px) {
+    .hero {
+        width: 50%;
+    }
+    .PcontainerEnc {
+        line-height: 1.75rem;
+    }
+}
+@media only screen and (min-width: 701px) {
+    main{
+        margin-top: 8%;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    main{
+        margin-top: 8%;
+    }
+}
+@media only screen and (min-width: 850px) {
+    .PcontainerEnc{
+        line-height: 2.6rem;
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    p {
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (min-width: 1125px) {
+    .hero {
+        width: 40%;
+    }
+    .EncuentraBeirut{
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 1350px){
+    .PcontainerEnc {
+        font-size: 1.2rem;
+    }
+    .pContainerHero {
+        width: 80%;
+    }
+    .imgPresentacion {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .beirutLink{
+        font-size: 1.9rem;
+    }
+}
+@media only screen and (min-width: 1700px) {
+    .hero{
+        width: 35%;
+    }
+    .EncuentraBeirut {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    p {
+        font-size: 1.6rem;
+    }
+    .serviciosP {
+        margin: 7.5rem 0;
+    }
+    .PcontainerEnc {
+        font-size: 1.7rem;
+    }
+    .beirutLink{
+        font-size: 2.2rem;
+    }
+    .servicioLink{
+        font-size: 2rem;
+    }
+}
